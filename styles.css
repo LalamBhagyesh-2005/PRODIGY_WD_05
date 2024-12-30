@@ -1,0 +1,100 @@
+/* Body styling with flame-inspired background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #ff4500, #ff9505, #ffdd33);
+    background-size: 400% 400%;
+    animation: flameBackground 8s ease infinite;
+    color: #fff;
+    text-align: center;
+}
+
+/* Flame animation for the background */
+@keyframes flameBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header styling */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px #ff4500, 0 0 15px #ff9505;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Input section */
+.input-section {
+    margin-bottom: 20px;
+}
+
+/* Buttons with glowing flame effect */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: linear-gradient(135deg, #ff4500, #ff9505);
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff4500, 0 0 20px #ff9505;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff4500, 0 0 40px #ff9505, 0 0 60px #ffdd33;
+}
+
+/* Input field */
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffdd33;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Weather result section */
+#weather-result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+#weather-result h2 {
+    text-shadow: 0 0 10px #ff4500, 0 0 15px #ff9505;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 0.9rem;
+    text-shadow: 0 0 5px #ff4500;
+}
